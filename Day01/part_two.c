@@ -24,15 +24,11 @@ int	find_max_line_length(char *file_str)
 		if (c == '\n')
 		{
 			if (line_length > max_line_length)
-			{
 				max_line_length = line_length;
-			}
 			line_length = 0;
 		}
 		if (line_length > max_line_length)
-		{
 			max_line_length = line_length;
-		}
 	}
 	return (max_line_length);
 }
@@ -86,9 +82,7 @@ t_nbr	find_nbr_as_string_if_any(char *str, t_dir direction)
 		if (direction == BACKWARDS)
 			direction_condition = cur_ptr > nbr_str.pos;
 		else if (direction == FORWARDS)
-		{
 			direction_condition = cur_ptr <= nbr_str.pos;
-		}
 		if (direction_condition && cur_ptr != NULL)
 		{
 			if (nbr_str.pos == NULL)
@@ -160,7 +154,6 @@ int	find_nbr_as_digit_or_string(char *str)
 	direction = FORWARDS;
 	str_nbr_first = find_nbr_as_string_if_any(str, direction);
 	dgt_nbr_first = find_nbr_as_digit_if_any(str, direction);
-	// printf("find_nbr_as_digit_or_string\n");
 	if (str_nbr_first.pos == NULL || ((str_nbr_first.pos > dgt_nbr_first.pos)
 			&& dgt_nbr_first.pos != NULL))
 		first_nbr = dgt_nbr_first.value;
@@ -227,9 +220,7 @@ int	main(int argc, char **argv)
 	int total;
 
 	if (argc == 2)
-	{
 		input_file_str = argv[1];
-	}
 
 	total = 0;
 	max_line_length = find_max_line_length(input_file_str);
