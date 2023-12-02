@@ -112,7 +112,7 @@ void create_sets_struct_arr(t_game *game) {
     int j;
     j = 0;
 
-    game->sets_struct_arr = malloc(sizeof(t_set *) * (game->sets_str_arr_len + 1);
+    game->sets_struct_arr[i] = malloc(sizeof(t_set));
 
     while (colors[j]) {
       printf("i: %d", i);
