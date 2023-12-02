@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* Just not to have to allocate a buffer of a random size*/
 int	find_max_line_length(char *file_str)
 {
 	FILE	*file;
@@ -43,67 +42,6 @@ typedef struct s_nbr
 	int		value;
 	char	*pos;
 }			t_nbr;
-/*
-
-t_nbr	*find_nbr_as_string_if_any_forwards(char *str) {
-  t_nbr nbr_str;
-  int i;
-  char *cur_ptr;
-
-  char *ints[] = {"one", "two",   "three", "four", "five",
-					"six", "seven", "eight", "nine", NULL};
-
-  nbr_str.pos = NULL;
-  nbr_str.value = 0;
-  i = 0;
-  cur_ptr = NULL;
-  nbr_str.pos = NULL;
-  while (*ints[i]) {
-	cur_ptr = strstr(str, ints[i]);
-	if (cur_ptr) {
-		if (nbr_str.pos == NULL) {
-		nbr_str.pos = cur_ptr;
-		nbr_str.value = i + 1;
-		} else if (cur_ptr < nbr_str.pos) {
-		nbr_str.pos = cur_ptr;
-		nbr_str.value = i + 1;
-		}
-	}
-	i++;
-  }
-  return (&nbr_str);
-}
-
-t_nbr	*find_nbr_as_string_if_any_backwards(char *str) {
-  t_nbr nbr_str;
-  int i;
-  char *cur_ptr;
-
-  char *ints[] = {"one", "two",   "three", "four", "five",
-					"six", "seven", "eight", "nine", NULL};
-
-  nbr_str.pos = NULL;
-  nbr_str.value = 0;
-  i = 0;
-  cur_ptr = NULL;
-  nbr_str.pos = NULL;
-  while (*ints[i]) {
-	cur_ptr = strstr(str, ints[i]);
-	if (cur_ptr) {
-		if (nbr_str.pos == NULL) {
-		nbr_str.pos = cur_ptr;
-		nbr_str.value = i + 1;
-		} else if (cur_ptr > nbr_str.pos) {
-		nbr_str.pos = cur_ptr;
-		nbr_str.value = i + 1;
-		}
-	}
-	i++;
-  }
-  return (&nbr_str);
-}
-
-*/
 
 typedef enum e_dir
 {
@@ -121,11 +59,6 @@ t_nbr	find_nbr_as_string_if_any(char *str, t_dir direction)
 	char	*ints[] = {"one", "two", "three", "four", "five", "six", "seven",
 			"eight", "nine", NULL};
 
-	// printf("find_nbr_as_string_if_any\n");
-	// if (direction == BACKWARDS)
-	//	printf("direction: %s\n", "BACKWARDS");
-	// else if (direction == FORWARDS)
-	//	printf("direction: %s\n", "FORWARDS");
 	cur_ptr = NULL;
 	prev_ptr = NULL;
 	nbr_str.pos = NULL;
@@ -149,8 +82,6 @@ t_nbr	find_nbr_as_string_if_any(char *str, t_dir direction)
 			cur_ptr = strstr(str, ints[i]);
 			if (nbr_str.pos == NULL)
 				nbr_str.pos = cur_ptr;
-			// printf("cur_ptr: %s\n", cur_ptr);
-			// printf("cur_ptr's address: %p\n", cur_ptr);
 		}
 		if (direction == BACKWARDS)
 			direction_condition = cur_ptr > nbr_str.pos;
@@ -160,29 +91,15 @@ t_nbr	find_nbr_as_string_if_any(char *str, t_dir direction)
 		}
 		if (direction_condition && cur_ptr != NULL)
 		{
-			// printf("******************************\n");
-			// printf("We set nbr_str.pos and nbr_str.value\n");
 			if (nbr_str.pos == NULL)
 				nbr_str.pos = cur_ptr;
 			nbr_str.pos = cur_ptr;
 			nbr_str.value = i + 1;
-			// printf("nbr_str.pos: %s\n", nbr_str.pos);
-			// printf("nbr_str.pos's address: %p\n", nbr_str.pos);
-			// printf("nbr_str.value: %d\n", nbr_str.value);
 		}
 		i++;
 	}
-	// printf("Exiting find_nbr_as_string_if_any\n");
-	// printf("nbr_str.pos: %s", nbr_str.pos);
-	// printf("nbr_str.pos's address: %p\n", nbr_str.pos);
-	// printf("nbr_str.value: %d\n", nbr_str.value);
 	return (nbr_str);
 }
-
-// void assign_values(char *str, t_nbr *nbr_dgt) {
-//   nbr_dgt->pos = *str;
-//   nbr_dgt->value = atoi(*str);
-// }
 
 t_nbr	find_nbr_as_digit_if_any(char *str, t_dir direction)
 {
@@ -191,11 +108,6 @@ t_nbr	find_nbr_as_digit_if_any(char *str, t_dir direction)
 	char	atoi_str[2];
 	int		i;
 
-	// printf("find_nbr_as_digit_if_any\n");
-	// if (direction == BACKWARDS)
-	//	printf("direction: %s\n", "BACKWARDS");
-	// else if (direction == FORWARDS)
-	//	printf("direction: %s\n", "FORWARDS");
 	nbr_dgt.value = 0;
 	nbr_dgt.pos = NULL;
 	len = strlen(str);
@@ -229,9 +141,6 @@ t_nbr	find_nbr_as_digit_if_any(char *str, t_dir direction)
 			}
 		}
 	}
-	// printf("nbr_dgt.pos: %s\n", nbr_dgt.pos);
-	// printf("nbr_dgt.pos's address: %p\n", nbr_dgt.pos);
-	// printf("nbr_dgt.value: %d\n", nbr_dgt.value);
 	return (nbr_dgt);
 }
 
@@ -254,17 +163,7 @@ int	find_nbr_as_digit_or_string(char *str)
 	// printf("find_nbr_as_digit_or_string\n");
 	if (str_nbr_first.pos == NULL || ((str_nbr_first.pos > dgt_nbr_first.pos)
 			&& dgt_nbr_first.pos != NULL))
-	{
-		// if (str_nbr_first.pos > dgt_nbr_first.pos)
-		//	printf("str_nbr_first.pos > dgt_nbr_first.pos\n");
-		// else if (str_nbr_first.pos < dgt_nbr_first.pos)
-		//	printf("str_nbr_first.pos < dgt_nbr_first.pos\n");
-		// else if (str_nbr_first.pos == dgt_nbr_first.pos)
-		//	printf("str_nbr_first.pos == dgt_nbr_first.pos\n");
-		// printf("address of str_nbr_first.pos: %p\n", str_nbr_first.pos);
-		// printf("address of dgt_nbr_first.pos: %p\n", dgt_nbr_first.pos);
 		first_nbr = dgt_nbr_first.value;
-	}
 	if (str_nbr_first.pos == NULL)
 		first_nbr = dgt_nbr_first.value;
 	else if (dgt_nbr_first.pos == NULL)
@@ -273,15 +172,9 @@ int	find_nbr_as_digit_or_string(char *str)
 		first_nbr = str_nbr_first.value;
 	else if (str_nbr_first.pos > dgt_nbr_first.pos)
 		first_nbr = dgt_nbr_first.value;
-	// printf("first_nbr: %d\n", first_nbr);
 	direction = BACKWARDS;
 	str_nbr_second = find_nbr_as_string_if_any(str, direction);
 	dgt_nbr_second = find_nbr_as_digit_if_any(str, direction);
-	// if (str_nbr_second.pos == NULL
-	//|| str_nbr_second.pos < dgt_nbr_second.pos)
-	//	second_nbr = dgt_nbr_second.value;
-	// else
-	//	second_nbr = str_nbr_second.value;
 	if (str_nbr_second.pos == NULL)
 		second_nbr = dgt_nbr_second.value;
 	else if (dgt_nbr_second.pos == NULL)
@@ -290,7 +183,6 @@ int	find_nbr_as_digit_or_string(char *str)
 		second_nbr = dgt_nbr_second.value;
 	else if (str_nbr_second.pos > dgt_nbr_second.pos)
 		second_nbr = str_nbr_second.value;
-	// printf("second_nbr: %d\n", second_nbr);
 	ret = first_nbr * 10 + second_nbr;
 	return (ret);
 }
@@ -309,7 +201,6 @@ int	extract_nbr_from_line(char *str)
 	{
 		if (isdigit(str[i]))
 		{
-			//   printf("isdigit: %c\n", str[i]);
 			nbr_str[0] = str[i];
 			break ;
 		}
@@ -318,7 +209,6 @@ int	extract_nbr_from_line(char *str)
 	{
 		if (isdigit(str[i]))
 		{
-			// printf("isdigit: %c\n", str[i]);
 			nbr_str[1] = str[i];
 			break ;
 		}
@@ -360,16 +250,12 @@ int	main(int argc, char **argv)
 	int i = 1;
 	while (fgets(line, max_line_length + 1, input_file))
 	{
-		printf("====================================\n");
 		printf("%d: ", i);
 		printf("line: %s", line);
 		nbr = find_nbr_as_digit_or_string(line);
 		printf("nbr: %d\n", nbr);
-		// nbr = extract_nbr_from_line(line);
-		// printf("total before: %d\n", total);
 		total += nbr;
 		i++;
-		// printf("total after: %d\n", total);
 	}
 	free(line);
 	fclose(input_file);
