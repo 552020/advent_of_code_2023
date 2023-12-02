@@ -34,6 +34,8 @@ void create_sets_arr(t_game *game) {
   // printf("create_sets_arr\n");
   //   printf("sets_str: %s", game->sets_str);
 
+  str_len = 0;
+
   arr_len = 1;
   cur = strchr(game->sets_str, ';');
   while (cur) {
