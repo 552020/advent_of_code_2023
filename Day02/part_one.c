@@ -176,6 +176,7 @@ int main() {
 
   t_games games;
   int i;
+  int j;
   i = 0;
   create_and_init_games(&games);
   while (games.games_arr[i]) {
@@ -189,6 +190,26 @@ int main() {
     printf("i: %d", i);
     i++;
   }
+  while(games.games_arr[i])
+  {
+	  j = 0;
+	  games.games_arr[i]->sets_str;
+	  while(sets_str_arr[j])
+	  {
+		  free(set_str_arr[j]);
+		  j++;
+	  }
+	  free(sets_str_arr);
+	  j = 0;
+	  while(sets_struct_arr[j])
+	  {
+		  free(sets_struct_arr[j]);
+		  j++;
+	  }
+	  free(sets_struct_arr);
+	  free(games.games_arr[i]);
+  }
+
 
   return (0);
 }
