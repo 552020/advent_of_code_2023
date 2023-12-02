@@ -15,6 +15,7 @@ typedef struct s_set {
 typedef struct s_game {
   int game_id;
   char *sets_str;
+  int sets_str_arr_len;
   char **sets_str_arr;
   t_set **sets_struct_arr;
 
@@ -42,14 +43,15 @@ void create_sets_arr(t_game *game) {
     arr_len++;
     cur = strchr(cur + 1, ';');
   }
+  game->sets_str_arr_len = arr_len;
+  
   //   printf("arr_len: %d\n", arr_len);
-  game->sets_str_arr = malloc(sizeof(char *) * arr_len + 1);
+  game->sets_str_arr = malloc(sizeof(char *) * (arr_len + 1));
   if (!game->sets_str_arr) {
     // free memory;
     exit(1);
   }
-  game->sets_str_arr[arr_len] = NULL;
-  game->sets_struct_arr = malloc(sizeof(t_set *) * arr_len + 1);
+  game->sets_struct_arr = malloc(sizeof(t_set *) * (arr_len + 1));
   if (!game->sets_struct_arr) {
     // free memory
     exit(1);
@@ -65,7 +67,7 @@ void create_sets_arr(t_game *game) {
       exit(1);
     }
     memcpy(game->sets_str_arr[i], start, cur - start);
-    game->sets_str_arr[cur - start] = NULL;
+    game->sets_str_arr[i][cur - start] = '\0';
     start = cur + 1;
     while (isspace(*start))
       start++;
@@ -81,9 +83,10 @@ void create_sets_arr(t_game *game) {
       exit(1);
     }
     memcpy(game->sets_str_arr[i], start, str_len);
-    game->sets_str_arr[str_len] = NULL;
+    game->sets_str_arr[i][str_len] = '\0';
     printf("%s\n", game->sets_str_arr[i]);
   }
+  game->sets_str_arr[i] = NULL;
 }
 
 void free_sets_str_arr(t_game *game) {
@@ -108,6 +111,8 @@ void create_sets_struct_arr(t_game *game) {
     char *colors[4] = {"green", "blue", "red", NULL};
     int j;
     j = 0;
+
+    game->sets_struct_arr = malloc(sizeof(t_set *) * (game->sets_str_arr_len + 1);
 
     while (colors[j]) {
       printf("i: %d", i);
