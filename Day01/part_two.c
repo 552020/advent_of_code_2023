@@ -114,7 +114,7 @@ t_nbr find_nbr_as_string_if_any(char *str, t_dir direction) {
   nbr_str.value = 0;
 
   i = 0;
-  while (*ints[i]) {
+  while (ints[i]) {
     cur_ptr = strstr(str, ints[i]);
     if (direction == BACKWARDS)
       direction_condition = cur_ptr > nbr_str.pos;
