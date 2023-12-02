@@ -44,7 +44,7 @@ void create_sets_arr(t_game *game) {
     cur = strchr(cur + 1, ';');
   }
   game->sets_str_arr_len = arr_len;
-  
+
   //   printf("arr_len: %d\n", arr_len);
   game->sets_str_arr = malloc(sizeof(char *) * (arr_len + 1));
   if (!game->sets_str_arr) {
@@ -190,26 +190,22 @@ int main() {
     printf("i: %d", i);
     i++;
   }
-  while(games.games_arr[i])
-  {
-	  j = 0;
-	  games.games_arr[i]->sets_str;
-	  while(sets_str_arr[j])
-	  {
-		  free(set_str_arr[j]);
-		  j++;
-	  }
-	  free(sets_str_arr);
-	  j = 0;
-	  while(sets_struct_arr[j])
-	  {
-		  free(sets_struct_arr[j]);
-		  j++;
-	  }
-	  free(sets_struct_arr);
-	  free(games.games_arr[i]);
+  while (games.games_arr[i]) {
+    j = 0;
+    free(games.games_arr[i]->sets_str);
+    while (games.games_arr[i]->sets_str_arr[j]) {
+      free(games.games_arr[i]->sets_str_arr[j]);
+      j++;
+    }
+    free(games.games_arr[i]->sets_str_arr);
+    j = 0;
+    while (games.games_arr[i]->sets_struct_arr[j]) {
+      free(games.games_arr[i]->sets_struct_arr[j]);
+      j++;
+    }
+    free(games.games_arr[i]->sets_struct_arr);
+    free(games.games_arr[i]);
   }
-
 
   return (0);
 }

@@ -2,12 +2,12 @@
 triple:          'arm64-apple-darwin'
 binary-path:     a.out
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _find_max_line_length, symObjAddr: 0x0, symBinAddr: 0x100003414, symSize: 0xF8 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _find_max_line_length, symObjAddr: 0x0, symBinAddr: 0x100003414, symSize: 0xF8 }
-  - { offsetInCU: 0x26, offset: 0x2C3, size: 0x8, addend: 0x0, symName: _create_sets_arr, symObjAddr: 0x0, symBinAddr: 0x10000350C, symSize: 0x334 }
-  - { offsetInCU: 0x42, offset: 0x2DF, size: 0x8, addend: 0x0, symName: _create_sets_arr, symObjAddr: 0x0, symBinAddr: 0x10000350C, symSize: 0x334 }
-  - { offsetInCU: 0xAC, offset: 0x349, size: 0x8, addend: 0x0, symName: _free_sets_str_arr, symObjAddr: 0x334, symBinAddr: 0x100003840, symSize: 0x74 }
-  - { offsetInCU: 0xDE, offset: 0x37B, size: 0x8, addend: 0x0, symName: _create_sets_struct_arr, symObjAddr: 0x3A8, symBinAddr: 0x1000038B4, symSize: 0x2A0 }
-  - { offsetInCU: 0x156, offset: 0x3F3, size: 0x8, addend: 0x0, symName: _create_and_init_games, symObjAddr: 0x648, symBinAddr: 0x100003B54, symSize: 0x1CC }
-  - { offsetInCU: 0x1CE, offset: 0x46B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x814, symBinAddr: 0x100003D20, symSize: 0xF4 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _find_max_line_length, symObjAddr: 0x0, symBinAddr: 0x1000032A4, symSize: 0xF8 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _find_max_line_length, symObjAddr: 0x0, symBinAddr: 0x1000032A4, symSize: 0xF8 }
+  - { offsetInCU: 0x26, offset: 0x2C3, size: 0x8, addend: 0x0, symName: _create_sets_arr, symObjAddr: 0x0, symBinAddr: 0x10000339C, symSize: 0x360 }
+  - { offsetInCU: 0x42, offset: 0x2DF, size: 0x8, addend: 0x0, symName: _create_sets_arr, symObjAddr: 0x0, symBinAddr: 0x10000339C, symSize: 0x360 }
+  - { offsetInCU: 0xAC, offset: 0x349, size: 0x8, addend: 0x0, symName: _free_sets_str_arr, symObjAddr: 0x360, symBinAddr: 0x1000036FC, symSize: 0x74 }
+  - { offsetInCU: 0xDE, offset: 0x37B, size: 0x8, addend: 0x0, symName: _create_sets_struct_arr, symObjAddr: 0x3D4, symBinAddr: 0x100003770, symSize: 0x2B8 }
+  - { offsetInCU: 0x156, offset: 0x3F3, size: 0x8, addend: 0x0, symName: _create_and_init_games, symObjAddr: 0x68C, symBinAddr: 0x100003A28, symSize: 0x1CC }
+  - { offsetInCU: 0x1CE, offset: 0x46B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x858, symBinAddr: 0x100003BF4, symSize: 0x220 }
 ...
