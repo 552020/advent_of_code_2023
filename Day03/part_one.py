@@ -64,7 +64,7 @@ def append_part(start_x, end_x, part):
 		print("This part gets appended:", part)				
 		parts.append(part)
 	
-with open('input_files/input_one_test_two.txt', 'r') as file:
+with open('input_files/input_one.txt', 'r') as file:
 	for idx, line in enumerate(file):
 		line_list = []
 		# print(idx)
