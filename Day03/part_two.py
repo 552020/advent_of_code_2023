@@ -1,5 +1,6 @@
 lines_list = []
 parts = []
+gears = []
 
 def is_symbol(char):
 	if char == '.':
@@ -60,7 +61,7 @@ def has_gear(char, line, idx):
 		print("counter before exiting has_gear", counter)
 		return True
 
-
+gear = ""
 def is_a_part_number(start_x, end_x, line):
 	print("start_range, end_range")
 	print(start_x)
@@ -74,16 +75,22 @@ def is_a_part_number(start_x, end_x, line):
 	prev_char = lines_list[line][start_range]
 	if is_symbol(prev_char):
 		if (has_gear(prev_char, line, start_range)):
+			gear = int(str(line) + str(start_range))
+			gears.append([gear, 0])
 			return True 
 	next_char = lines_list[line][end_range]
 	if is_symbol(next_char):
 		if (has_gear(next_char, line, end_range)):
+			gear = int(str(line) + str(end_range))
+			gears.append([gear, 0])
 			return True
 
 	if (y_idx > 0):
 		for idx, char in enumerate(lines_list[line - 1][start_range:end_range + 1]):
 			if is_symbol(char):
 				if (has_gear(char, line - 1, start_range + idx)):
+					gear = int(str(line) + str(start_range + idx))
+					gears.append([gear, 0])
 					return True
 
 	if (y_idx < max_y ):
@@ -92,6 +99,8 @@ def is_a_part_number(start_x, end_x, line):
 				print("has_gear(char,line + 1, idx)", char, line, idx, idx + 1)
 				print("".join(lines_list[line + 1]))
 				if (has_gear(char, line + 1, start_range + idx)):
+					gear = int(str(line) + str(start_range + idx))
+					gears.append([gear, 0])
 					return True
 
 	print("exiting is_a_part_number")
@@ -100,6 +109,7 @@ def is_a_part_number(start_x, end_x, line):
 def append_part(start_x, end_x, part):
 	if (is_a_part_number(start_x, end_x, y_idx)):
 		parts.append(part)
+		gears[-1][1] = int(part)
 	
 with open('input_files/input_two.txt', 'r') as file:
 	for idx, line in enumerate(file):
@@ -145,7 +155,10 @@ total = 0
 print(parts)
 # for part in parts:
 # 	total += int(part)
-parts_int = [int(item) for item in parts]
-print(parts_int)
-total = sum_of_products(parts_int)
+# parts_int = [int(item) for item in parts]
+# print(parts_int)
+# total = sum_of_products(parts_int)
+print(gears)
 print(total)
+gears.sort(key=lambda x: x[1])
+print(gears)
