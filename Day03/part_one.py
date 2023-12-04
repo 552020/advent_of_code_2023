@@ -38,7 +38,7 @@ def append_part(start_x, end_x, part):
 	if (is_a_part_number(start_x, end_x, y_idx)):
 		parts.append(part)
 	
-with open('input_files/input_one.txt', 'r') as file:
+with open('input_files/input_two.txt', 'r') as file:
 	for idx, line in enumerate(file):
 		line_list = []
 		for letter in line:
