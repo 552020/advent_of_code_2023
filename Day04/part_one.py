@@ -1,9 +1,11 @@
 lines = []
 cards = []
 numbers = []
+cards_int = []
+numbers_int = []
 
 
-with open('input_files/input_one_test.txt', 'r') as file:
+with open('input_files/input_one.txt', 'r') as file:
 	for line in file:
 		lines.append(line)
 for line in lines:
@@ -20,16 +22,29 @@ print("numbers: ", numbers)
 tmp = []
 for card in cards:
 	card_int = {int(nbr) for nbr in card.split()}
-	tmp.append(card_int)
-cards = tmp
+	cards_int.append(card_int)
 for number in numbers:
 	number_int = {int(nbr) for nbr in number.split()}
-	tmp.append(number_int)
-numbers = tmp
+	numbers_int.append(number_int)
 print("cards:", cards)
-print("tmp:", tmp)
+print("cards_int:", cards_int)
 print("numbers", numbers)
+print("numbers_int", numbers_int)
 
+partial = 0
+total = 0
 for idx, item in enumerate(cards):
-	intersection = cards[idx] & numbers[idx]
+	intersection = cards_int[idx] & numbers_int[idx]
+	partial = 0
 	members = len(intersection)
+	if members > 0:
+		partial = 1
+		for _ in range(1, members):
+			partial = partial * 2
+
+	print('partial: ', partial)
+
+	total += partial
+
+print("total:", total)
+
