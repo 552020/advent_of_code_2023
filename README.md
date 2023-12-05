@@ -26,3 +26,4 @@ I didn't manage to get the second part right. I'll come back maybe later.
 
 00.24 - Starting now. Let's see how it goes.
 02.03 - It took more than 1 hour to solve the first one. The second part already lets me cry. 
+05.00 - I give up!
