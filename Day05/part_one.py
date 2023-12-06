@@ -43,21 +43,41 @@ def extract_seeds(line, seed_map):
     print("Exit extract_seeds")
 
 
-def assign_map_values(line, seed_map, key):
+def assign_map_values(line, key_src, key_dest):
     stripped = line.strip()
     if stripped == "":
         return
     if not stripped[0].isdigit():
-        return False
+        return
     print("line: ", line)
     destination_range_start = int(line.split()[0].strip())
+    print("destination_range_start: ", destination_range_start)
     source_range_start = int(line.split()[1].strip())
+    print("source_range_start: ", source_range_start)
     range_length = int(line.split()[2].strip())
-    for idx in range(range_length):
-        for seed_map in seed_maps:
-            if seed_map["seed"] == source_range_start + idx:
-                seed_map[key] = destination_range_start + idx
-    return True
+    print("range_length: ", range_length)
+    for seed_map in seed_maps:
+        update_flag_key = f"{key_dest}_updated"
+        if not seed_map.get(update_flag_key):
+            seed_map[update_flag_key] = False
+        # matched = False
+        for idx in range(range_length):
+            if seed_map[key_src] == source_range_start + idx:
+                # matched = True
+                print("Matched: ")
+                print("key_src: ", key_src)
+                print("key_dest: ", key_dest)
+                print("seed_map[key_src]: ", seed_map[key_src])
+                print("source_range_start + idx: ", source_range_start + idx)
+                print("seed_map[key_dest] before: ", seed_map[key_dest])
+                seed_map[key_dest] = destination_range_start + idx
+                print("seed_map[key_dest] after: ", seed_map[key_dest])
+                seed_map[update_flag_key] = True
+                break
+        # if not matched:
+        if seed_map[update_flag_key] == False:
+            print("Not matched: ")
+            seed_map[key_dest] = seed_map[key_src]
 
 
 def create_seed_maps(lines, seed_map):
@@ -70,83 +90,61 @@ def create_seed_maps(lines, seed_map):
     in_humidity = False
     in_location = False
 
-    idx = 0
     extract_seeds(lines[0], seed_map)
     print("seed_maps: ", seed_maps)
-    for i, line in enumerate(lines):
+    for line in lines:
         print("line: ", line)
         if line.strip() == "":
             continue
         if line.strip() == "seed-to-soil map:":
             in_soil = True
-            idx = -1
+            # idx = -1
             continue
         if in_soil:
             print("in soil")
             print("line: ", line)
-            if line.strip()[0].isdigit():
-                idx += 1
-                print("idx: ", idx)
-                print("seed_maps[idx]: ", seed_maps[idx])
-                assign_map_values(line, seed_maps[idx], "soil")
+            assign_map_values(line, "seed", "soil")
         if line.strip() == "soil-to-fertilizer map:":
             print("in soil to fertilizer")
             print("line: ", line)
             in_fertilizer = True
             in_soil = False
-            idx = -1
             continue
         if in_fertilizer:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "fertilizer")
+            assign_map_values(line, "soil", "fertilizer")
         if line.strip() == "fertilizer-to-water map:":
             in_water = True
             in_fertilizer = False
-            idx = -1
             continue
         if in_water:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "water")
+            assign_map_values(line, "fertilizer", "water")
         if line.strip() == "water-to-light map:":
             in_light = True
             in_water = False
-            idx = -1
             continue
         if in_light:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "light")
+            assign_map_values(line, "water", "light")
         if line.strip() == "light-to-temperature map:":
             in_temperature = True
             in_light = False
-            idx = -1
             continue
         if in_temperature:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "temperature")
+            assign_map_values(line, "light", "temperature")
         if line.strip() == "temperature-to-humidity map:":
             in_humidity = True
             in_temperature = False
-            idx = -1
             continue
         if in_humidity:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "humidity")
+            assign_map_values(line, "temperature", "humidity")
         if line.strip() == "humidity-to-location map:":
             in_location = True
             in_humidity = False
-            idx = -1
             continue
         if in_location:
-            if line.strip()[0].isdigit():
-                idx += 1
-                assign_map_values(line, seed_maps[idx], "location")
+            assign_map_values(line, "humidity", "location")
             in_location = False
-        print("seed_maps[idx]:", seed_maps[idx])
+        print("seed_maps: ", seed_maps)
+    print("Exit create_seed_maps")
 
 
 def print_seed_map_dict(seed_map):

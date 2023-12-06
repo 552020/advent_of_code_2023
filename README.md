@@ -33,11 +33,13 @@ I didn't manage to get the second part right. I'll come back maybe later.
 ## Day05
 
 18.41 - Start.
-18.55 - Just read the assigment, without fully understand it.
+18.55 - I just read the assigment, without fully understand it.
 20.19 - We start again.
 21.28 - Pause.
 22.50 - We start again.
-23.59 - 1.10 hr to partially solve the problem of tabs and spaces. The objective was to let the auto-formatter to convert tabs in spaces. I didn't reach the goal. But VSCode has an embedded functionality tranform spaces in tabs. 
+23.59 - 1.10 hr to partially solve the problem of tabs and spaces in Python. The objective was to let the auto-formatter to convert tabs in spaces. I didn't reach the goal. But VSCode has an embedded functionality tranform spaces in tabs. Basically yak-shaving.
 01.03 - I guess I have some working code but execution is taking very long because of loops on really big ranges.
 01.46 - I had the brilliant idea to test the code with the small test file and the code throw some errors: I could solve them and I managed to get the final result, which is wrong of course!
 02.41 - Debugging with prints, a lot of them. 
+03.24 - "Any source numbers that aren't mapped correspond to the same destination number. So, seed number 10 corresponds to soil number 10." Remember to read the subject in depth!
+04.08 - I found another bug. Hopefully the last one. 

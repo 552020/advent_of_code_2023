@@ -115,3 +115,408 @@ location:  0
 idx:  3
 location:  0
 
+create_seed_maps
+line.split(:)[1]:  79 14 55 13
+line.split(:)[1].strip().split():  ['79', '14', '55', '13']
+seeds_len: 
+4
+idx:  0
+seed: 
+79
+tmp:  {'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  1
+seed: 
+14
+tmp:  {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  2
+seed: 
+55
+tmp:  {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  3
+seed: 
+13
+tmp:  {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+Exit extract_seeds
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  seeds: 79 14 55 13
+seed_maps[idx]: {'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  
+line:  seed-to-soil map:
+line:  50 98 2
+in soil
+line:  50 98 2
+line:  50 98 2
+seed_maps[idx]: {'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  52 50 48
+in soil
+line:  52 50 48
+line:  52 50 48
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  
+line:  soil-to-fertilizer map:
+in soil
+line:  soil-to-fertilizer map:
+in soil to fertilizer
+line:  soil-to-fertilizer map:
+line:  0 15 37
+line:  0 15 37
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  37 52 2
+line:  37 52 2
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  39 0 15
+line:  39 0 15
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  
+line:  fertilizer-to-water map:
+line:  49 53 8
+line:  49 53 8
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  0 11 42
+line:  0 11 42
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  42 0 7
+line:  42 0 7
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  57 7 4
+line:  57 7 4
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  
+line:  water-to-light map:
+line:  88 18 7
+line:  88 18 7
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  18 25 70
+line:  18 25 70
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 0, 'humidity': 0, 'location': 0}
+line:  
+line:  light-to-temperature map:
+line:  45 77 23
+line:  45 77 23
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 0}
+line:  81 45 19
+line:  81 45 19
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 0}
+line:  68 64 13
+line:  68 64 13
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 0}
+line:  
+line:  temperature-to-humidity map:
+line:  0 69 1
+line:  0 69 1
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 0}
+line:  1 0 69
+line:  1 0 69
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 0}
+line:  
+line:  humidity-to-location map:
+line:  60 56 37
+line:  60 56 37
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 83}
+line:  56 93 4
+seed_maps[idx]: {'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 72, 'temperature': 47, 'humidity': 0, 'location': 83}
+lowest_location:  83
+idx:  0
+location:  83
+
+idx:  1
+location:  0
+
+idx:  2
+location:  0
+
+idx:  3
+location:  0
+
+create_seed_maps
+line.split(:)[1]:  79 14 55 13
+line.split(:)[1].strip().split():  ['79', '14', '55', '13']
+seeds_len: 
+4
+idx:  0
+seed: 
+79
+tmp:  {'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  1
+seed: 
+14
+tmp:  {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  2
+seed: 
+55
+tmp:  {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  3
+seed: 
+13
+tmp:  {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+Exit extract_seeds
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  seeds: 79 14 55 13
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  seed-to-soil map:
+line:  50 98 2
+in soil
+line:  50 98 2
+line:  50 98 2
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  52 50 48
+in soil
+line:  52 50 48
+line:  52 50 48
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  soil-to-fertilizer map:
+in soil
+line:  soil-to-fertilizer map:
+in soil to fertilizer
+line:  soil-to-fertilizer map:
+line:  0 15 37
+line:  0 15 37
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  37 52 2
+line:  37 52 2
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  39 0 15
+line:  39 0 15
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  fertilizer-to-water map:
+line:  49 53 8
+line:  49 53 8
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  0 11 42
+line:  0 11 42
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  42 0 7
+line:  42 0 7
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  57 7 4
+line:  57 7 4
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  water-to-light map:
+line:  88 18 7
+line:  88 18 7
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  18 25 70
+line:  18 25 70
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  light-to-temperature map:
+line:  45 77 23
+line:  45 77 23
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  81 45 19
+line:  81 45 19
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  68 64 13
+line:  68 64 13
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  temperature-to-humidity map:
+line:  0 69 1
+line:  0 69 1
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  1 0 69
+line:  1 0 69
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+line:  
+line:  humidity-to-location map:
+line:  60 56 37
+line:  60 56 37
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+line:  56 93 4
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+Exit create_seed_maps
+lowest_location:  0
+idx:  0
+location:  0
+
+idx:  1
+location:  0
+
+idx:  2
+location:  0
+
+idx:  3
+location:  0
+
+create_seed_maps
+line.split(:)[1]:  79 14 55 13
+line.split(:)[1].strip().split():  ['79', '14', '55', '13']
+seeds_len: 
+4
+idx:  0
+seed: 
+79
+tmp:  {'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  1
+seed: 
+14
+tmp:  {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  2
+seed: 
+55
+tmp:  {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+idx:  3
+seed: 
+13
+tmp:  {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}
+Exit extract_seeds
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  seeds: 79 14 55 13
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  seed-to-soil map:
+line:  50 98 2
+in soil
+line:  50 98 2
+line:  50 98 2
+seed_maps:  [{'seed': 79, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  52 50 48
+in soil
+line:  52 50 48
+line:  52 50 48
+Matched: 
+seed_map[key_src]:  55
+source_range_start + idx:  55
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  79
+source_range_start + idx:  79
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  soil-to-fertilizer map:
+in soil
+line:  soil-to-fertilizer map:
+in soil to fertilizer
+line:  soil-to-fertilizer map:
+line:  0 15 37
+line:  0 15 37
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  37 52 2
+line:  37 52 2
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  39 0 15
+line:  39 0 15
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  fertilizer-to-water map:
+line:  49 53 8
+line:  49 53 8
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  0 11 42
+line:  0 11 42
+Matched: 
+seed_map[key_src]:  39
+source_range_start + idx:  39
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  39
+source_range_start + idx:  39
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 0, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  42 0 7
+line:  42 0 7
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  57 7 4
+line:  57 7 4
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  water-to-light map:
+line:  88 18 7
+line:  88 18 7
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 0, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  18 25 70
+line:  18 25 70
+Matched: 
+seed_map[key_src]:  28
+source_range_start + idx:  28
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  28
+source_range_start + idx:  28
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  42
+source_range_start + idx:  42
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  42
+source_range_start + idx:  42
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  light-to-temperature map:
+line:  45 77 23
+line:  45 77 23
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  81 45 19
+line:  81 45 19
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  68 64 13
+line:  68 64 13
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  
+line:  temperature-to-humidity map:
+line:  0 69 1
+line:  0 69 1
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 0, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 0, 'location': 0}]
+line:  1 0 69
+line:  1 0 69
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+Matched: 
+seed_map[key_src]:  0
+source_range_start + idx:  0
+seed_map[key_dest]:  0
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+line:  
+line:  humidity-to-location map:
+line:  60 56 37
+line:  60 56 37
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+line:  56 93 4
+seed_maps:  [{'seed': 79, 'soil': 81, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 14, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 55, 'soil': 57, 'fertilizer': 0, 'water': 42, 'light': 35, 'temperature': 0, 'humidity': 1, 'location': 0}, {'seed': 13, 'soil': 0, 'fertilizer': 39, 'water': 28, 'light': 21, 'temperature': 0, 'humidity': 1, 'location': 0}]
+Exit create_seed_maps
+lowest_location:  0
+idx:  0
+location:  0
+
+idx:  1
+location:  0
+
+idx:  2
+location:  0
+
+idx:  3
+location:  0
+
