@@ -18,7 +18,7 @@ The model has been used partially to generally spare on the first answer and to 
 
 ## Day03
 
-(Partially) solved in Python.
+(Partially) solved in Python. 
 
 I didn't manage to get the second part right. I'll come back maybe later.
 
@@ -31,6 +31,10 @@ I didn't manage to get the second part right. I'll come back maybe later.
 05.00 - I give up!
 
 ## Day05
+
+(Not solved) in Python. 
+
+Only the test case was correctly computed. For the real first case the program was way too slow. 
 
 18.41 - Start.
 18.55 - I just read the assigment, without fully understand it.
