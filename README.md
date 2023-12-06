@@ -36,3 +36,6 @@ I didn't manage to get the second part right. I'll come back maybe later.
 18.55 - Just read the assigment, without fully understand it.
 20.19 - We start again.
 21.28 - Pause.
+22.50 - We start again.
+23.59 - 1.10 hr to partially solve the problem of tabs and spaces. The objective was to let the auto-formatter to convert tabs in spaces. I didn't reach the goal. But VSCode has an embedded functionality tranform spaces in tabs. 
+01.03 - I guess I have some working code but execution is taking very long because of loops on really big ranges.
