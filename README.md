@@ -39,3 +39,5 @@ I didn't manage to get the second part right. I'll come back maybe later.
 22.50 - We start again.
 23.59 - 1.10 hr to partially solve the problem of tabs and spaces. The objective was to let the auto-formatter to convert tabs in spaces. I didn't reach the goal. But VSCode has an embedded functionality tranform spaces in tabs. 
 01.03 - I guess I have some working code but execution is taking very long because of loops on really big ranges.
+01.46 - I had the brilliant idea to test the code with the small test file and the code throw some errors: I could solve them and I managed to get the final result, which is wrong of course!
+02.41 - Debugging with prints, a lot of them. 
