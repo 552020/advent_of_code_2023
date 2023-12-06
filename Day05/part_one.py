@@ -21,26 +21,26 @@ seed_map = {
 def extract_seeds(line, seed_map):
     if line.split(":")[0] == "seeds":
         seeds = line.split(":")[1].strip().split(" ")
-        print("line.split(:)[1]: ", line.split(":")[1].strip())
-        print(
-            "line.split(:)[1].strip().split(" "): ",
-            line.split(":")[1].strip().split(" "),
-        )
+        # print("line.split(:)[1]: ", line.split(":")[1].strip())
+        # print(
+        # "line.split(:)[1].strip().split(" "): ",
+        # line.split(":")[1].strip().split(" "),
+        # )
 
-        seeds_len = len(seeds)
-        print("seeds_len: ")
-        print(seeds_len)
+        # seeds_len = len(seeds)
+        # print("seeds_len: ")
+        # print(seeds_len)
         for idx, seed in enumerate(seeds):
             seed = seed.strip()
-            print("idx: ", idx)
+            # print("idx: ", idx)
             if seed != "":
-                print("seed: ")
-                print(seed)
+                # print("seed: ")
+                # print(seed)
                 tmp = seed_map.copy()
                 tmp["seed"] = int(seed)
-                print("tmp: ", tmp)
+                # print("tmp: ", tmp)
                 seed_maps.append(tmp)
-    print("Exit extract_seeds")
+    # print("Exit extract_seeds")
 
 
 def assign_map_values(line, key_src, key_dest):
@@ -49,13 +49,13 @@ def assign_map_values(line, key_src, key_dest):
         return
     if not stripped[0].isdigit():
         return
-    print("line: ", line)
+    # print("line: ", line)
     destination_range_start = int(line.split()[0].strip())
-    print("destination_range_start: ", destination_range_start)
+    # print("destination_range_start: ", destination_range_start)
     source_range_start = int(line.split()[1].strip())
-    print("source_range_start: ", source_range_start)
+    # print("source_range_start: ", source_range_start)
     range_length = int(line.split()[2].strip())
-    print("range_length: ", range_length)
+    # print("range_length: ", range_length)
     for seed_map in seed_maps:
         update_flag_key = f"{key_dest}_updated"
         if not seed_map.get(update_flag_key):
@@ -64,19 +64,19 @@ def assign_map_values(line, key_src, key_dest):
         for idx in range(range_length):
             if seed_map[key_src] == source_range_start + idx:
                 # matched = True
-                print("Matched: ")
-                print("key_src: ", key_src)
-                print("key_dest: ", key_dest)
-                print("seed_map[key_src]: ", seed_map[key_src])
-                print("source_range_start + idx: ", source_range_start + idx)
-                print("seed_map[key_dest] before: ", seed_map[key_dest])
+                # print("Matched: ")
+                # print("key_src: ", key_src)
+                # print("key_dest: ", key_dest)
+                # print("seed_map[key_src]: ", seed_map[key_src])
+                # print("source_range_start + idx: ", source_range_start + idx)
+                # print("seed_map[key_dest] before: ", seed_map[key_dest])
                 seed_map[key_dest] = destination_range_start + idx
-                print("seed_map[key_dest] after: ", seed_map[key_dest])
+                # print("seed_map[key_dest] after: ", seed_map[key_dest])
                 seed_map[update_flag_key] = True
                 break
         # if not matched:
         if seed_map[update_flag_key] == False:
-            print("Not matched: ")
+            # print("Not matched: ")
             seed_map[key_dest] = seed_map[key_src]
 
 
@@ -144,7 +144,7 @@ def create_seed_maps(lines, seed_map):
             assign_map_values(line, "humidity", "location")
             in_location = False
         print("seed_maps: ", seed_maps)
-    print("Exit create_seed_maps")
+    # print("Exit create_seed_maps")
 
 
 def print_seed_map_dict(seed_map):
@@ -180,11 +180,11 @@ def print_all_locations(seed_maps):
         print("")
 
 
-with open("input_files/input_one_test.txt", "r") as file:
+with open("input_files/input_one.txt", "r") as file:
     for line in file:
         lines.append(line.strip())
 
 create_seed_maps(lines, seed_map)
 lowest_location = find_lowest_location(seed_maps)
 print("lowest_location: ", lowest_location)
-print_all_locations(seed_maps)
+# print_all_locations(seed_maps)

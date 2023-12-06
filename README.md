@@ -42,4 +42,6 @@ I didn't manage to get the second part right. I'll come back maybe later.
 01.46 - I had the brilliant idea to test the code with the small test file and the code throw some errors: I could solve them and I managed to get the final result, which is wrong of course!
 02.41 - Debugging with prints, a lot of them. 
 03.24 - "Any source numbers that aren't mapped correspond to the same destination number. So, seed number 10 corresponds to soil number 10." Remember to read the subject in depth!
-04.08 - I found another bug. Hopefully the last one. 
+04.08 - I found another bug. Hopefully the last one.
+04.17 - Test input solved. 
+04.22 - Execution started 
