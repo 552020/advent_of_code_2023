@@ -45,3 +45,4 @@ I didn't manage to get the second part right. I'll come back maybe later.
 04.08 - I found another bug. Hopefully the last one.
 04.17 - Test input solved. 
 04.22 - Execution started 
+04.52 - The program has not finished execution yet. Good night!
