@@ -50,3 +50,7 @@ Only the test case was correctly computed. For the real first case the program w
 04.17 - Test input solved. 
 04.22 - Execution started 
 04.52 - The program has not finished execution yet. Good night!
+
+## Day 06
+
+03.45 - Start
