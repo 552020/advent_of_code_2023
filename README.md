@@ -66,3 +66,4 @@ Only the test case was correctly computed. For the real first case the program w
 17.10 - Pause.
 19.50 - Restartign at LPG.
 22.25 - Test is solved.
+22.35 - 250465985. Too low. See you tomorrow!

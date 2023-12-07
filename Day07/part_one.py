@@ -33,7 +33,7 @@ all_hands_type = [
 ]
 
 
-with open("input_files/input_one_test.txt", "r") as lines:
+with open("input_files/input_one.txt", "r") as lines:
     for idx, line in enumerate(lines):
         hand_line = line.strip().split()[0]
         bid_line = line.strip().split()[1]
@@ -158,16 +158,35 @@ def replace_chars_in_hand(hand, original_chars, replacement_chars):
     return "".join(char_map.get(char, char) for char in hand["cards"])
 
 
+def compare_cards_chars(a, b):
+    for char_a, char_b in zip(a, b):
+        if char_a != char_b:
+            return char_a < char_b
+    return False
+
+
 def sort_hands(hands):
     n = len(hands)
     for i in range(n):
         for j in range(0, n - i - 1):
-            if hands[j]["cards_chars"][0] > hands[j + 1]["cards_chars"][0]:
-                # Swap the ranks
+            if compare_cards_chars(
+                hands[j]["cards_chars"], hands[j + 1]["cards_chars"]
+            ):
                 hands[j]["rank"], hands[j + 1]["rank"] = (
                     hands[j + 1]["rank"],
                     hands[j]["rank"],
                 )
+
+
+# def sort_hands(hands):
+#     n = len(hands)
+#     for i in range(n):
+#         for j in range(0, n - i - 1):
+#             if hands[j]["cards_chars"][0] > hands[j + 1]["cards_chars"][0]:
+#                 hands[j]["rank"], hands[j + 1]["rank"] = (
+#                     hands[j + 1]["rank"],
+#                     hands[j]["rank"],
+#                 )
 
 
 for idx, hand in enumerate(hands):
