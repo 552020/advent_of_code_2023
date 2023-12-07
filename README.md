@@ -55,3 +55,4 @@ Only the test case was correctly computed. For the real first case the program w
 
 03.45 - Start
 05.08 - Got the test.
+05.10 - One gold start.
