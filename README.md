@@ -54,3 +54,4 @@ Only the test case was correctly computed. For the real first case the program w
 ## Day 06
 
 03.45 - Start
+05.08 - Got the test.

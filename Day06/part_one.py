@@ -16,7 +16,7 @@ def fill_race_dict(line, key):
         races[idx][key] = int(part)
 
 
-with open("input_files/input_one_test.txt", "r") as file:
+with open("input_files/input_one.txt", "r") as file:
     for line in file:
         copy = race.copy()
         if line.split(":")[0] == "Time":
