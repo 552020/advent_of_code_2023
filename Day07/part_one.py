@@ -32,8 +32,10 @@ all_hands_type = [
     hands_high_card,
 ]
 
+all_hands_type_flat = []
 
-with open("input_files/input_one.txt", "r") as lines:
+
+with open("./input_one_test.txt", "r") as lines:
     for idx, line in enumerate(lines):
         hand_line = line.strip().split()[0]
         bid_line = line.strip().split()[1]
@@ -158,24 +160,28 @@ def replace_chars_in_hand(hand, original_chars, replacement_chars):
     return "".join(char_map.get(char, char) for char in hand["cards"])
 
 
-def compare_cards_chars(a, b):
+def second_is_higher(a, b):
     for char_a, char_b in zip(a, b):
         if char_a != char_b:
-            return char_a < char_b
+            return char_a > char_b
     return False
 
 
 def sort_hands(hands):
     n = len(hands)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if compare_cards_chars(
-                hands[j]["cards_chars"], hands[j + 1]["cards_chars"]
-            ):
-                hands[j]["rank"], hands[j + 1]["rank"] = (
-                    hands[j + 1]["rank"],
-                    hands[j]["rank"],
-                )
+    swapped = True
+    # for i in range(n):
+    while swapped:
+        swapped = False
+        # for j in range(0, n - i - 1):
+        for j in range(0, n - 1):
+            if second_is_higher(hands[j]["cards_chars"], hands[j + 1]["cards_chars"]):
+                if hands[j]["rank"] > hands[j + 1]["rank"]:
+                    hands[j]["rank"], hands[j + 1]["rank"] = (
+                        hands[j + 1]["rank"],
+                        hands[j]["rank"],
+                    )
+                    swapped = True
 
 
 # def sort_hands(hands):
@@ -221,3 +227,9 @@ for hands_type in all_hands_type:
         print("total_winnings: ", total_winnings)
         total_winnings += hand["bid"] * hand["rank"]
 print("total_winnings: ", total_winnings)
+
+# all_hands_type_flat = [
+#     item for sublist in all_hands_type for item in sublist
+# ]  # flatten list of lists
+
+# print("all_hands_type_flat: ", all_hands_type_flat)
